@@ -65,3 +65,10 @@ tr {
   border-radius: 4px;
   resize: vertical; /* lets u drag the corner to resize */
 }
+
+/* styling the divider lines so they look clean */
+hr {
+  border: none;
+  border-top: 1px solid #dee2e6; 
+  margin: 30px 0; 
+}
