@@ -56,3 +56,12 @@ tr:nth-child(even) {
 tr {
   border-bottom: 1px solid #dee2e6;
 }
+
+#field3 {
+  width: 180px; /* making this wider than the rest */
+  height: 60px; /* making it tall */
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* lets u drag the corner to resize */
+}
