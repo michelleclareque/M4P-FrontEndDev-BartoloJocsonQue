@@ -11,8 +11,16 @@ form {
 }
 
 /* resizing the input boxes so they're not too wide */
-#field1, #menu, #field3 {
+#field1, #menu {
   width: 150px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#field3 {
+  width: 200px;
+  height: 100px;
   padding: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -31,7 +39,7 @@ input[type="submit"] {
 /* table stuff below */
 /* making the table full width and fixing the default borders */
 table {
-  width: 100%;
+  width: 70%;
   border-collapse: collapse; 
   font-family: sans-serif;
 }
