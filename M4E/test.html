@@ -1,0 +1,167 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class = "container-fluid">
+        <h1 class="text-start">Some Header</h1> 
+        <span class="border-top d-block w-100 my-0"></span>
+        <div class="d-flex justify-content-center">
+                <form method="POST" action="#">
+                    <label for="field1">Field 1</label>
+                    <input type="text" name="field1" id="field1">
+                    
+                    <label for="field2">Field 2</label>
+                    <select name="menu" id="menu">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                    
+                    <label for="field3">Field 3</label>
+                    <input type="text" name="field3" id="field3" >
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <span class="border-bottom d-block w-100 my-0"></span>
+
+        <br>
+
+        <div class= "d-flex justify-content-center">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Superhero Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bruce</td>
+                    <td>Wayne</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Selina</td>
+                    <td>Kyle</td>
+                    <td>Catwoman</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Diana</td>
+                    <td>Prince</td>
+                    <td>Wonder Woman</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Harleen</td>
+                    <td>Quinzel</td>
+                    <td>Harley Quinn</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Damian</td>
+                    <td>Wayne</td>
+                    <td>Robin</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Marco</td>
+                    <td>Bartolo</td>
+                    <td>kurokabe</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Clare</td>
+                    <td>Que</td>
+                    <td>sikret</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Nics</td>
+                    <td>Jocson</td>
+                    <td>Nigs</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Natasha</td>
+                    <td>Abdon</td>
+                    <td>SHAWshank Redemption</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Eduardo</td>
+                    <td>Zablan</td>
+                    <td>Destroyer_123</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Andreana</td>
+                    <td>Tuazon</td>
+                    <td>Andoks</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Dwayne</td>
+                    <td>Johnson</td>
+                    <td>The Rock</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Gojo</td>
+                    <td>Satoru</td>
+                    <td>The Honoured One</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>The</td>
+                    <td>Doctor</td>
+                    <td>The Oracle</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>James</td>
+                    <td>Reid</td>
+                    <td>Nadine Lustre</td>
+                </tr>
+            </table>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://myhero.com/content/images/thumbs/0093416_batman.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.dc.com/dc/files/default_images/Marquee_CATW_1_18_5c81d3336a53f1.74198070.jpg?w=1200" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.5cc.com.au/wp-content/uploads/sites/33/2025/06/20250613-wonderwoman-feature.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.supanova.com.au/wp-content/uploads/2020/02/Harley-Quinn.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://comicbook.com/wp-content/uploads/sites/4/2025/09/DC-Robin.jpg?w=1024" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://butwhytho.net/wp-content/uploads/2023/09/Gojo-Jujutsu-Kaisen-But-Why-Tho-2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
