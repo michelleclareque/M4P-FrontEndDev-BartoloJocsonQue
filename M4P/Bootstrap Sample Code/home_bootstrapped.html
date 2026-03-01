@@ -9,6 +9,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+        <style>
+
+        /* styling for the dark table header in inside_bootstrapped.html to match the mockup */
+        .table-dark-header {
+            background-color: #343a40;
+            color: white;
+        }
+
+        /* custom background setup for our group's brand page */
+        .brand-bg-custom {
+            /* i will uncomment the image properties below if we decide to use a group photo instead of this solid color */
+            background-color: #e9ecef;
+            /* background-image: url('our-group-photo.jpg'); */
+            /* background-size: cover; */
+            /* background-position: center; */
+            min-height: 100vh;
+        }
+
+        /* fixing the spacing for the wine category links on the left panel */
+        .left-panel-links a {
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        /* --- styles for the Home/Login Page --- */
+
+        /* fixing the margin for the header since BS5 uses ms-3 instead of ml-3 */
+        .ml-3 {
+            margin-left: 1rem !important;
+        }
+
+        /* giving the login card a bit of a shadow and spacing to make it look cleaner */
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 40px; 
+        }
+
+        /* ensuring the footer has a white background so it blocks out text behind it */
+        .fixed-bottom {
+            background-color: white;
+        }
+
+        /* adding a little padding to the very bottom of the page so the fixed footer doesn't hide content */
+        body {
+            padding-bottom: 60px; 
+        }
+
+        /* --- styles for inside_bootstrapped.html (Main Table Page) --- */
+
+        /* align the sidebar links and ensure they match the exact blue in the mockup */
+        .nav-link {
+            color: #007bff; 
+            padding-left: 0; 
+        }
+
+        /* styling for the wine names once you wrap them in <a> tags */
+        .table td a {
+            color: #007bff;
+            text-decoration: none; /* Removes the underline to match the screenshot */
+        }
+
+        .table td a:hover {
+            text-decoration: underline; /* Adds the underline back when hovered */
+        }
+
+        /* vertically center the content inside the table cells so the BUY button aligns nicely with the text */
+        .table td, .table th {
+            vertical-align: middle;
+        }
+
+        /* the mockup shows alternating row colors. This forces the odd rows to have a slight gray tint */
+        .table tbody tr:nth-of-type(odd) {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+    </style>
 
 </head>
 <body>
