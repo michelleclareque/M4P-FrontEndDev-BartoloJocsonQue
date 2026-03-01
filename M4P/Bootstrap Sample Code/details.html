@@ -6,7 +6,24 @@
     <title>Wines</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- insert style -->
+    
+    <style>
+        /* align the sidebar links and make them the right blue */
+        .nav-link {
+            color: #007bff; 
+            padding-left: 0; 
+        }
+
+        /* ensuring the footer has a white background so it blocks out text behind it */
+        .fixed-bottom {
+            background-color: white;
+        }
+
+        /* adding a little padding to the very bottom of the page so the fixed footer doesn't hide the submit button */
+        body {
+            padding-bottom: 80px; 
+        }
+    </style>
 </head>
 
 <body>
@@ -50,8 +67,8 @@
                             <div class="col-12"> 
                                 <h5>Purchase Details</h5>
                                 <br>
-                                <p class="mb-1"><strong>La Vieille Ferme Rouge</strong></p>
-                                <p class="mb-2">by: <a href="#">Famille Perrin</a></p>
+                                <p class="mb-1"><strong>La Vieille Ferme Rouge</strong> <span class="badge bg-success">Popular</span></p>
+                                <p class="mb-2">by: <a href="#" class="text-decoration-none">Famille Perrin</a></p>
                             </div>
                             <div class="col-12">
                                 <form method="POST" action="#">
@@ -96,4 +113,9 @@
             @happywines
         </div>
     </div>
+
+    <audio autoplay loop style="display: none;">
+        <source src="Some.mp3" type="audio/mpeg">
+    </audio>
+
 </body>

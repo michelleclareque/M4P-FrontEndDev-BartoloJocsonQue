@@ -5,37 +5,87 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>"Bar 'to ni Jocs on Quezon City" Brand</title>
 
-<!-- nics ikaw nalang mag add ng music dito pls thx -->
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-body {
-    background: url('punch monke sad.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
+    /*setting up the body with flexbox so the hero naturally centers in the middle of the screen */
+    body {
+        background: url('punch monke sad.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
 
-.hero {
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 80px 20px;
-    border-radius: 15px;
-}
+    /* pushes the footer down and centers the main content */
+    .container-main {
+        flex: 1;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    /* the glassmorphism hero unit */
+    .hero {
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(8px); /* this creates the frosted glass look */
+        -webkit-backdrop-filter: blur(8px);
+        color: white;
+        padding: 60px 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* deep shadow for depth */
+        border: 1px solid rgba(255, 255, 255, 0.15); /* very subtle white border */
+        width: 100%;
+        max-width: 800px; /* keeps the box from getting too wide on big screens */
+    }
+
+    /* upgrading the title typography */
+    .hero h1 {
+        font-weight: 700;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        letter-spacing: 1px;
+    }
+
+    /* custom styles for your group member buttons */
+    .btn-custom {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transition: all 0.3s ease;
+        padding: 10px 25px;
+    }
+
+    /* hover effect to make the buttons pop when the mouse is over them */
+    .btn-custom:hover {
+        background-color: white;
+        color: black;
+        transform: translateY(-3px); /* lifts the button slightly */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    /* neatly packaging the footer */
+    footer {
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        padding: 15px 0;
+        margin-top: auto; /* forces footer to the very bottom */
+    }
 </style>
 </head>
 
-<body class="brand-bg-custom">
+<body>
 
-<div class="container mt-5">
+<div class="container container-main">
     <div class="hero text-center">
         <h1 class="display-4">Bar 'to ni Jocs on Quezon City</h1>
-        <p class="lead">mga lasinggero bayan</p>
+        <p class="lead">mga lasinggero ng bayan. We are the proud inventors and producers of these fine wines.</p>
 
         <!-- Button Group -->
         <div class="btn-group mt-3">
-            <button class="btn btn-light">Bartolo</button>
-            <button class="btn btn-light">Jocson</button>
-            <button class="btn btn-light">Que</button>
+            <button class="btn btn-custom">Bartolo</button>
+            <button class="btn btn-custom">Jocson</button>
+            <button class="btn btn-custom">Que</button>
         </div>
     </div>
 </div>
@@ -43,6 +93,10 @@ body {
 <footer class="text-center text-white mt-5 pb-3">
     © Bar 'to ni Jocs on Quezon City
 </footer>
+
+<audio autoplay loop style="display: none;">
+    <source src="Malcolm Todd - Zip Up My Fly.mp3" type="audio/mpeg">
+</audio>
 
 </body>
 </html>
