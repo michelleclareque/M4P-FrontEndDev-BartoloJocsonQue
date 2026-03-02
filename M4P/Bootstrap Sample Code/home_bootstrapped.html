@@ -33,8 +33,6 @@
             text-decoration: none;
         }
 
-        /* --- styles for the Home/Login Page --- */
-
         /* fixing the margin for the header since BS5 uses ms-3 instead of ml-3 */
         .ml-3 {
             margin-left: 1rem !important;
@@ -54,34 +52,6 @@
         /* adding a little padding to the very bottom of the page so the fixed footer doesn't hide content */
         body {
             padding-bottom: 60px; 
-        }
-
-        /* --- styles for inside_bootstrapped.html (Main Table Page) --- */
-
-        /* align the sidebar links and ensure they match the exact blue in the mockup */
-        .nav-link {
-            color: #007bff; 
-            padding-left: 0; 
-        }
-
-        /* styling for the wine names once you wrap them in <a> tags */
-        .table td a {
-            color: #007bff;
-            text-decoration: none; /* Removes the underline to match the screenshot */
-        }
-
-        .table td a:hover {
-            text-decoration: underline; /* Adds the underline back when hovered */
-        }
-
-        /* vertically center the content inside the table cells so the BUY button aligns nicely with the text */
-        .table td, .table th {
-            vertical-align: middle;
-        }
-
-        /* the mockup shows alternating row colors. This forces the odd rows to have a slight gray tint */
-        .table tbody tr:nth-of-type(odd) {
-            background-color: rgba(0, 0, 0, 0.02);
         }
     </style>
 
